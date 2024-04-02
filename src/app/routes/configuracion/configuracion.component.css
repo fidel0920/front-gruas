@@ -1,0 +1,27 @@
+.buscador {
+    display: grid;
+    margin: 1%;
+}
+.buscador input {
+    border-radius: 10px;
+    padding: 1em;
+    border: 2px solid #ecf0f1;
+    width: 100%;
+}
+.element{ 
+    background: #fff;
+    border: 1px solid #ecf0f1;
+    padding: 20%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.element:hover {
+    border: 1px solid #f1c40f;
+}
+input {
+    border-radius: 8px;
+    height: 28px;
+    border: 2px solid #ecf0f1;
+    width: 100%;
+}

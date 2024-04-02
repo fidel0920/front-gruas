@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="servicio.component.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="buscador">
+        <img src="http://www.w3.org/2000/svg" alt="">
+        <input type="search" placeholder="Buscar...">
+    </div>
+    <div>
+        <h1>Servicio</h1>
+    </div>
+    <div class="opcion" *ngIf="subcollapsed">
+        <img src="../../assets/Buttons/Group 114.png" alt="" (click)="toggleCollapse()">
+    </div>
+    <div class="" *ngIf="subcollapsed">
+        <div class="element">
+            <table class="rows">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Operador</th>
+                        <th scope="col">Unidad</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Compañia</th>
+                        <th scope="col">Aseguradora</th>
+                        <th scope="col">Estatus</th>
+                        <th scope="col">Origen</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="contenido">
+                    <tr>
+                        <td>1</td>
+                        <td>user1</td>
+                        <td>user1</td>
+                        <td>user1</td>
+                        <td>user1</td>
+                        <td>user1@gmail.com</td>
+                        <td>4355467534</td>
+                        <td>Operador</td>
+                        <td>Monterrey</td>
+                        <td>Monterrey</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>user2</td>
+                        <td></td>
+                        <td>user2</td>
+                        <td>user2</td>
+                        <td>user2@gmail.com</td>
+                        <td>7838561003</td>
+                        <td>Operador</td>
+                        <td>Juares</td>
+                        <td>Monterrey</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>user3</td>
+                        <td>user3</td>
+                        <td>user3</td>
+                        <td>user3</td>
+                        <td>user3@gmail.com</td>
+                        <td>7784634456</td>
+                        <td>Operador</td>
+                        <td>Escobedo</td>
+                        <td>Monterrey</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>user4</td>
+                        <td></td>
+                        <td>user4</td>
+                        <td>user4</td>
+                        <td>user4@gmail.com</td>
+                        <td>8789466623</td>
+                        <td>Operador</td>
+                        <td>Monterrey</td>
+                        <td>Monterrey</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="format" *ngIf="collapsed"><a>FORMATO: AG-01</a></div>
+    <div class="grid" *ngIf="collapsed">
+        <div class="fila1">
+            <div class="estatus">
+                <div class="element">
+                    <a>Estatus</a>
+                    <br>
+                    <input type="text" placeholder="Estatus">
+                    <br>
+                    <a>Usuario</a>
+                    <br>
+                    <input type="text" placeholder="Usuario">
+                    <br>
+                    <div class="f2f1">
+                        <div class="elemento">
+                            <a>Fecha</a>
+                            <br>
+                            <input type="text" placeholder="Fecha">
+                        </div>
+                        <div class="elemento">
+                            <a>Folio</a>
+                            <br>
+                            <input type="text" placeholder="Folio">
+                        </div>
+                    </div>
+                </div>
+                <div class="element">
+                    <a>Compañía</a>
+                    <br>
+                    <input type="text" placeholder="Compañía">
+                    <br>
+                    <a>Aseguradora</a>
+                    <br>
+                    <input type="text" placeholder="Aseguradora">
+                    <br>
+                    <a>Tipo de Servicio</a>
+                    <br>
+                    <input type="text" placeholder="Tipo de Servicio">
+                </div>
+            </div>
+            <div class="element">
+                <a>Origen</a>
+                <br>
+                <input type="text" placeholder="Origen">
+                <br>
+                <a>Destino</a>
+                <br>
+                <input type="text" placeholder="Destino">
+                <div class="f2f2">
+                    <div class="elemento">
+                        <a>Tipo de grua</a>
+                        <br>
+                        <input type="text" placeholder="Tipo de grua">
+                    </div>
+                    <div class="elemento">
+                        <a>Kilometros</a>
+                        <br>
+                        <input type="text" placeholder="Kilometros">
+                    </div>
+                </div>
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Kilometros de terraceria</a>
+                        <br>
+                        <input type="text" placeholder="Kilometros de terraceria">
+                    </div>
+                    <div class="elemento">
+                        <a>Kilometros de sierra</a>
+                        <br>
+                        <input type="text" placeholder="Kilometros de sierra">
+                    </div>
+                </div>
+                <a>Comentarios</a>
+                <br>
+                <input type="text" placeholder="Comentarios">
+            </div>
+            <div class="element">
+                <div class="f2f3">
+                    <div class="elemento">
+                        <a>Asistencia</a>
+                        <br>
+                        <input type="text" placeholder="Asistencia">
+                    </div>
+                    <div class="elemento">
+                        <a>Importe sin IVA</a>
+                        <br>
+                        <input type="text" placeholder="Importe sin IVA">
+                    </div>
+                    <div class="elemento">
+                        <a>Autorizo</a>
+                        <br>
+                        <input type="text" placeholder="Autorizo">
+                    </div>
+                </div>
+                <div class="f2f4">
+                    <div class="elemento">
+                        <a>Tipo de Excedente 1</a>
+                        <br>
+                        <input type="text" placeholder="Tipo de Excedente 1">
+                    </div>
+                    <div class="elemento">
+                        <a>Importe sin IVA</a>
+                        <br>
+                        <input type="text" placeholder="Importe sin IVA">
+                    </div>
+                    <div class="elemento">
+                        <a>Eco./Expediente 1</a>
+                        <br>
+                        <input type="text" placeholder="Eco./Expediente 1">
+                    </div>
+                    <div class="elemento">
+                        <a>Autorizo</a>
+                        <br>
+                        <input type="text" placeholder="Autorizo">
+                    </div>
+                </div>
+                <div class="f2f4">
+                    <div class="elemento">
+                        <a>Tipo de Excedente 2</a>
+                        <br>
+                        <input type="text" placeholder="Tipo de Excedente 2">
+                    </div>
+                    <div class="elemento">
+                        <a>Importe sin IVA</a>
+                        <br>
+                        <input type="text" placeholder="Importe sin IVA">
+                    </div>
+                    <div class="elemento">
+                        <a>Eco./Expediente 2</a>
+                        <br>
+                        <input type="text" placeholder="Eco./Expediente 2">
+                    </div>
+                    <div class="elemento">
+                        <a>Autorizo</a>
+                        <br>
+                        <input type="text" placeholder="Autorizo">
+                    </div>
+                </div>
+                <div class="f2f4">
+                    <div class="elemento">
+                        <a>Tipo de Excedente 3</a>
+                        <br>
+                        <input type="text" placeholder="Tipo de Excedente 3">
+                    </div>
+                    <div class="elemento">
+                        <a>Importe sin IVA</a>
+                        <br>
+                        <input type="text" placeholder="Importe sin IVA">
+                    </div>
+                    <div class="elemento">
+                        <a>Eco./Expediente 3</a>
+                        <br>
+                        <input type="text" placeholder="Eco./Expediente 3">
+                    </div>
+                    <div class="elemento">
+                        <a>Autorizo</a>
+                        <br>
+                        <input type="text" placeholder="Autorizo">
+                    </div>
+                </div>
+                <a>Comentarios</a>
+                <br>
+                <input type="text" placeholder="Comentarios">
+            </div>
+
+        </div>
+        <div class="fila2">
+            <div class="element">
+                <div class="f2f4">
+                    <div class="elemento"><a>Informacion del usuario y datos del vehiculo</a></div>
+                    <div class="elemento"><a>Datos de facturacion</a></div>
+                    <div class="elemento"><a>Direccion de origen</a></div>
+                    <div class="elemento"><a>Direccion de destino</a></div>
+                </div>
+            </div>
+            <div class="element">
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Hr. asignada por el cliente</a>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div class="elemento">
+                        <a>Hr. asignada por el operador</a>
+                        <br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Operador</a>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div class="elemento">
+                        <a>Unidad</a>
+                        <br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="elemento">
+                    <a>Muerto / Realizado / Cancelado</a>
+                    <br>
+                    <input type="text" placeholder="lorem">
+                </div>
+                <div class="elemento">
+                    <a>Comentario del servicio</a>
+                    <br>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="fila3">
+            <div class="element">
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Nombre de quien cierra</a>
+                        <br>
+                        <input type="text" placeholder="Nombre de quien cierra">
+                    </div>
+                    <div class="elemento">
+                        <a>Nombre de quien autorizó</a>
+                        <br>
+                        <input type="text" placeholder="Nombre de quien autorizó">
+                    </div>
+                </div>
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Fecha</a>
+                        <br>
+                        <input type="text" placeholder="Fecha">
+                    </div>
+                    <div class="elemento">
+                        <a>Hora</a>
+                        <br>
+                        <input type="text" placeholder="Hora">
+                    </div>
+                </div>
+                <a>Comentarios de cierre</a>
+                <br>
+                <input type="text" placeholder="">
+            </div>
+            <div class="element">
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Folio de papeleta</a>
+                        <br>
+                        <input type="text" placeholder="Folio de papeleta">
+                    </div>
+                    <div class="elemento">
+                        <a>Factura</a>
+                        <br>
+                        <input type="text" placeholder="Factura">
+                    </div>
+                </div>
+                <a>No. de factura</a>
+                <br>
+                <input type="text" placeholder="">
+                <div class="f2f1">
+                    <div class="elemento">
+                        <a>Costo real visado</a>
+                        <br>
+                        <input type="text" placeholder="Costo real visado">
+                    </div>
+                    <div class="elemento">
+                        <a>Estatus de cobranza</a>
+                        <br>
+                        <input type="text" placeholder="Estatus de cobranza">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desicion" *ngIf="collapsed">
+            <button class="save" (click)="toggleCollapse()">
+                <img src="../../assets/Buttons/save.png" alt="">
+                <span> Guardar</span>
+            </button>
+            <button class="cancel" (click)="toggleCollapse()">
+                <img src="../../assets/Buttons/cancel.png" alt="">
+                <span> Cancelar</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()"><img src="../../assets/Icons/White/menu.png"></button>
+        <div class="logo-text" *ngIf="collapsed"></div>
+        <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+            <img src="../../assets/Icons/White/close.png">
+        </button>
+    </div>
+    <div class="perfil" *ngIf="collapsed">
+        <img class="logo" src="../../assets/Images/logo.png">
+        <br>
+        <h1>¡Hola User1!</h1>
+        <h5>Ultimo inicio de sesion</h5>
+        <h5>dd/mm/aaaa hh:mm</h5>
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item">
+            <a class="sidenav-nav-link" routerLink="perfil" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <img class="sidenav-link-icon" src="../../assets/Icons/White/Icon awesome-user-alt.svg">
+                <span class="sidenav-link-text" *ngIf="collapsed">Perfil</span>
+            </a>
+        </li>
+        <li class="sidenav-nav-item">
+            <div class="">
+                <a class="sidenav-nav-link" routerLink="configuracion" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}"
+                    (click)="toggleCollapse()">
+                    <img class="sidenav-link-icon" src="../../assets/Icons/White/Icon ionic-ios-settings.svg">
+                    <span class="sidenav-link-text" *ngIf="collapsed">Configuracion</span>
+                </a>
+            </div>
+            <ul class="sub-nav" *ngIf="collapsed">
+                <li >
+                    <a routerLink="configuracion/usuarios" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/users.png" alt="">
+                        <span class="sub-nav-text">Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/clientes" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/clients.png" alt="">
+                        <span class="sub-nav-text">Clientes</span>
+                    </a>
+                </li>
+                <li *ngIf="subcollapsed">
+                    <a routerLink="configuracion/unidades" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/units.png" alt="">
+                        <span class="sub-nav-text">Unidades</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/operadores" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/employees.png" alt="">
+                        <span class="sub-nav-text">Operadores</span></a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/documentos" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/documents.png" alt="">
+                        <span class="sub-nav-text">Documentos</span></a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/roles" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/rol.png" alt="">
+                        <span class="sub-nav-text">Roles</span></a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/permisos" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/keys.png" alt="">
+                        <span class="sub-nav-text">Permisos</span></a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/modulos" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/moduls.png" alt="">
+                        <span class="sub-nav-text">Modulos</span></a>
+                </li>
+                <li>
+                    <a routerLink="configuracion/sucursales" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/store.png" alt="">
+                        <span class="sub-nav-text">Sucursales</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="sidenav-nav-item">
+            <div class="">
+                <a class="sidenav-nav-link" routerLink="servicio" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <img class="sidenav-link-icon" src="../../assets/Icons/White/Icon awesome-database.svg">
+                    <span class="sidenav-link-text" *ngIf="collapsed">Servicio</span>
+                </a>
+            </div>
+        </li>
+        <li class="sidenav-nav-item">
+            <div class="">
+                <a class="sidenav-nav-link" routerLink="monitoreo" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <img class="sidenav-link-icon" src="../../assets/Icons/White/Icon material-location-on.svg">
+                    <span class="sidenav-link-text" *ngIf="collapsed">Monitoreo</span>
+                </a>
+            </div>
+        </li>
+        <li class="sidenav-nav-item">
+            <div class="salir">
+                <a class="sidenav-nav-link" routerLink="reportes" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}"
+                    (click)="toggleCollapse()">
+                    <img class="sidenav-link-icon" src="../../assets/Icons/White/Icon ionic-ios-document.svg">
+                    <span class="sidenav-link-text" *ngIf="collapsed">Reportes</span>
+                </a>
+            </div>
+            <ul class="sub-nav" *ngIf="collapsed">
+                <li>
+                    <a routerLink="reportes/repo1" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/report.png" alt="">
+                        <span class="sub-nav-text">Reporte 1</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="reportes/repo2" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/report.png" alt="">
+                        <span class="sub-nav-text">Reporte 2</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="reportes/repo3" class="subsidenavcont">
+                        <img src="../../assets/Icons/White/report.png" alt="">
+                        <span class="sub-nav-text">Reporte 3</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="sidenav-nav-item">
+            <div class="salir">
+                <a class="sidenav-nav-link" (click)="salir()">
+                    <img class="sidenav-link-icon" src="../../assets/Icons/White/Icon open-account-logout.svg">
+                    <span class="sidenav-link-text" *ngIf="collapsed">Salir</span>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="dashboard" [ngClass]="getDashClass()">
+    <div class="fila1" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+        <div class="element">
+            <div class="f2f4">
+                <div class="elemento" id="uno">
+                    <a class="conten">
+                        <img src="../../assets/Icons/White/solicitud.png" alt="">
+                        <span>5 Solicitudes</span>
+                    </a>
+                </div>
+                <div class="elemento" id="dos">
+                    <a class="conten">
+                        <img src="../../assets/Icons/White/atendidas.png" alt="">
+                        <span>5 Atendidas</span>
+                    </a>
+                </div>
+                <div class="elemento" id="tres">
+                    <a class="conten">
+                        <img src="../../assets/Icons/White/cancelada.png" alt="">
+                        <span>5 Canceladas</span>
+                    </a>
+                </div>
+                <div class="elemento" id="cuatro">
+                    <a class="conten">
+                        <img src="../../assets/Icons/White/trancito.png" alt="">
+                        <span>5 En Transito</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="buscador">
+            <img src="http://www.w3.org/2000/svg" alt="">
+            <input type="search" placeholder="Buscar...">
+        </div>
+    </div>
+    <div>
+        <h1>Unidades</h1>
+    </div>
+    <div class="form" *ngIf="collapsed">
+        <div class="element">
+            <div class="elemento">
+                <a>Nombre</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Segundo Nombre</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Ap. Paterno</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Ap. Materno</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Correo</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Telefono</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Cargo</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="elemento">
+                <a>Sucursal</a>
+                <br>
+                <input type="text">
+            </div>
+            <div class="option">
+                <button class="save" (click)="toggleCollapse()">
+                    <img src="../../assets/Buttons/save.png" alt="">
+                    <span> Guardar</span>
+                </button>
+                <button class="cancel" (click)="toggleCollapse()">
+                    <img src="../../assets/Buttons/cancel.png" alt="">
+                    <span> Cancelar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="subcollapsed">
+        <button class="add">
+            <img src="../../../assets/Buttons/Group 114.png" alt="" (click)="toggleCollapse()">
+        </button>
+        <div class="element">
+            <table class="rows">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Segundo Nombre</th>
+                        <th scope="col">Ap. Paterno</th>
+                        <th scope="col">Ap. Materno</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Cargo</th>
+                        <th scope="col">Sucursal</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="contenido">
+                    <tr>
+                        <td>1</td>
+                        <td>user1</td>
+                        <td>user1</td>
+                        <td>user1</td>
+                        <td>user1</td>
+                        <td>user1@gmail.com</td>
+                        <td>4355467534</td>
+                        <td>Operador</td>
+                        <td>Monterrey</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>user2</td>
+                        <td></td>
+                        <td>user2</td>
+                        <td>user2</td>
+                        <td>user2@gmail.com</td>
+                        <td>7838561003</td>
+                        <td>Operador</td>
+                        <td>Juares</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>user3</td>
+                        <td>user3</td>
+                        <td>user3</td>
+                        <td>user3</td>
+                        <td>user3@gmail.com</td>
+                        <td>7784634456</td>
+                        <td>Operador</td>
+                        <td>Escobedo</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>user4</td>
+                        <td></td>
+                        <td>user4</td>
+                        <td>user4</td>
+                        <td>user4@gmail.com</td>
+                        <td>8789466623</td>
+                        <td>Operador</td>
+                        <td>Monterrey</td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/Group 116.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <button (click)="toggleCollapse()">
+                                <img src="../../../assets/Buttons/eliminar.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

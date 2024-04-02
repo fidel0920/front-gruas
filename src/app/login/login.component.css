@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+ .f2f1 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: minmax(30%, auto);
+}
+.f2f2 {
+    display: grid;
+    text-align: right;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: minmax(30%, auto);
+}
+.element{ 
+    background: transparent;
+    border: 1px solid transparent;
+    padding: .25%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.elemento input:hover {
+    border: 1px solid #f1c40f;
+}
+input{
+    border-radius: 8px;
+    height: 30px;
+    border: 2px solid #ecf0f1;
+    width: 100%;
+}
+a{
+    color: maroon;
+    font-size: 70%;
+}
+button{
+    border-radius: 8px;
+    height: 28px;
+    border: 2px solid maroon;
+    background: maroon;
+    width: 100%;
+    color: #ecf0f1;
+}
+h1{
+    color: maroon;
+    font-size: 50px;
+}
+h5{
+    color: rgb(143, 143, 143);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.elemento button:hover{
+    border: 2px solid #f1c40f;
+    background: white;
+    color: black;
+}
+
+.animation{
+    margin-top: -3%;
+}
+.animation .path{
+    display: flex;
+    position: fixed;
+    align-content: left;
+    margin-left: 50%;
+}
+.animation2 {
+    display: flex;
+    position: fixed;
+    margin-top: 9%;
+    align-content: left;
+    margin-left: 50%;
+}
+.login {
+    width: 30%;
+    height: 30%;
+    position: fixed;
+    align-items: right;
+    margin-top: 19%;
+    margin-left: 5%;
+}

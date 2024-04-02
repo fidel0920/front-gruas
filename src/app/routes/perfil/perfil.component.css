@@ -1,0 +1,36 @@
+
+.f2f1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(30%, 50%);
+}
+.elemento input:hover {
+    border: 1px solid #f1c40f;
+}
+.elemento {
+    margin: 3px;
+    margin-left: 1%;
+}
+
+input {
+    border-radius: 8px;
+    height: 28px;
+    border: 2px solid #ecf0f1;
+    width: 30%;
+    text-align: center;
+}
+a {
+    color: maroon;
+    font-size: 70%;
+}
+ #foto{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+}

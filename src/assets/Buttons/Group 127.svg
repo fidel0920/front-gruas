@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_127" data-name="Group 127" transform="translate(-5291 208)">
+    <g id="Group_115" data-name="Group 115">
+      <g id="Rectangle_129" data-name="Rectangle 129" transform="translate(5291 -208)" fill="#fff" stroke="#707070" stroke-width="0.2">
+        <rect width="30" height="30" rx="5" stroke="none"/>
+        <rect x="0.1" y="0.1" width="29.8" height="29.8" rx="4.9" fill="none"/>
+      </g>
+      <path id="Icon_awesome-edit" data-name="Icon awesome-edit" d="M13.16,2.723l2.948,2.948a.32.32,0,0,1,0,.451L8.97,13.262,5.936,13.6a.636.636,0,0,1-.7-.7L5.57,9.863l7.139-7.139A.32.32,0,0,1,13.16,2.723Zm5.3-.749-1.6-1.6a1.278,1.278,0,0,0-1.8,0L13.9,1.537a.32.32,0,0,0,0,.451l2.948,2.948a.32.32,0,0,0,.451,0l1.157-1.157A1.278,1.278,0,0,0,18.456,1.975Zm-5.9,9.346v3.328H2.092V4.188H9.6a.4.4,0,0,0,.278-.114l1.308-1.308a.392.392,0,0,0-.278-.67H1.569A1.569,1.569,0,0,0,0,3.665V15.171A1.569,1.569,0,0,0,1.569,16.74H13.075a1.569,1.569,0,0,0,1.569-1.569V10.013a.393.393,0,0,0-.67-.278l-1.308,1.308A.4.4,0,0,0,12.552,11.32Z" transform="translate(5297.421 -201.007)" fill="#0454af"/>
+    </g>
+  </g>
+</svg>

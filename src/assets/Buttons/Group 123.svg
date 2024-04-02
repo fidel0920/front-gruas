@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_123" data-name="Group 123" transform="translate(-5059 194)">
+    <g id="Group_120" data-name="Group 120" transform="translate(3309 -1210)">
+      <g id="Rectangle_120" data-name="Rectangle 120" transform="translate(1750 1016)" fill="#fff" stroke="#707070" stroke-width="0.2">
+        <rect width="30" height="30" rx="5" stroke="none"/>
+        <rect x="0.1" y="0.1" width="29.8" height="29.8" rx="4.9" fill="none"/>
+      </g>
+      <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M14.771,18.1l6.489-6.494a1.221,1.221,0,0,1,1.732,0,1.237,1.237,0,0,1,0,1.737L15.64,20.7a1.224,1.224,0,0,1-1.691.036l-7.4-7.388a1.227,1.227,0,1,1,1.732-1.737Z" transform="translate(1749.754 1045.349) rotate(-90)"/>
+    </g>
+  </g>
+</svg>
